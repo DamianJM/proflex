@@ -1,13 +1,13 @@
 # ProFlex Protein Flexibility Alphabet
-ProFlex Alphabet for Protein Flexibility Description
+**ProFlex Alphabet for Protein Flexibility Description**
 
-In order to install the proflex toolkit simply type:
+## In order to install the proflex toolkit simply type:
 
 pip install proflex
 
 If problems occur during installation or specifically with structural comparisons this is almost certainly due to pymol2 installation issues. In those cases, please proceed to pymol installation via freely available wheels by following these instructions: https://github.com/cgohlke/pymol-open-source-wheels?tab=readme-ov-file
 
-# Upon installation, the toolkit can be imported and integrated into various workflows. To query a PDB against a proflex database requires only three lines of code:
+## Upon installation, the toolkit can be imported and integrated into various workflows. To query a PDB against a proflex database requires only three lines of code:
 
 import proflex as pf
 pq = pf.ProFlexQuery("/path/to/database")
@@ -19,7 +19,7 @@ wget https://ftp.ebi.ac.uk/pub/databases/alphafold/latest/swissprot_pdb_v4.tar
 
 Simply unpack all structures into the PDB subdirectory of the database. The PDB filenames are referenced by the database and can be retrieved when queries are performed.
 
-# Given a multifasta of proflex sequences, databases can be created like so:
+Given a multifasta of proflex sequences, databases can be created like so:
 
 import proflex as pf
 new_database = pf.NGramDatabase()
