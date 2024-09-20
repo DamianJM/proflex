@@ -2,8 +2,8 @@
 **ProFlex Alphabet for Protein Flexibility Description**
 
 ## In order to install the proflex toolkit simply type:
-
-`pip install proflex`
+```bash
+pip install proflex
 
 If problems occur during installation or specifically with structural comparisons this is almost certainly due to pymol2 installation issues. In those cases, please proceed to pymol installation via freely available wheels by following these instructions: https://github.com/cgohlke/pymol-open-source-wheels?tab=readme-ov-file
 
