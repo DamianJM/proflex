@@ -9,9 +9,9 @@ If problems occur during installation or specifically with structural comparison
 
 ## Upon installation, the toolkit can be imported and integrated into various workflows. To query a PDB against a proflex database requires only three lines of code:
 
-import proflex as pf
-pq = pf.ProFlexQuery("/path/to/database")
-pq.query_pdb("input.pdb")
+`import proflex as pf`
+`pq = pf.ProFlexQuery("/path/to/database")`
+`pq.query_pdb("input.pdb")`
 
 As part of this repo we provide a precompile SWISS-PROT proflex database that can be downloaded. To prepare this database for full use, PDB structures need to be downloaded to the PDB subdirectory like so:
 
