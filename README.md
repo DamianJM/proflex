@@ -34,6 +34,13 @@ import proflex as pf
 pq = pf.ProFlexQuery("/path/to/database")
 pq.query_pdb("input.pdb")
 ```
+
+This provides a report output in HTML format similar to the below:
+
+<img src="https://raw.githubusercontent.com/DamianJM/proflex/main/img/FiguresProFlex.jpg" width="600" height="800"></img> 
+
+Structural and sequence alignments are provided along with top ProFlex query hits and a backtranslated RMSF value comparison with that of the top query hit.
+
 As part of this repo we provide a precompile SWISS-PROT proflex database that can be downloaded. To prepare this database for full use, PDB structures need to be downloaded to the PDB subdirectory like so:
 ```bash
 wget https://ftp.ebi.ac.uk/pub/databases/alphafold/latest/swissprot_pdb_v4.tar
