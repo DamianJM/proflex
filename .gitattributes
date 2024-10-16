@@ -8,3 +8,4 @@ ProFlex_Toolkit filter=lfs diff=lfs merge=lfs -text
 ProFlex-Translation filter=lfs diff=lfs merge=lfs -text
 README.md filter=lfs diff=lfs merge=lfs -text
 Scripts filter=lfs diff=lfs merge=lfs -text
+*.zip filter=lfs diff=lfs merge=lfs -text
