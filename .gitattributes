@@ -1,0 +1,10 @@
+img filter=lfs diff=lfs merge=lfs -text
+LICENSE filter=lfs diff=lfs merge=lfs -text
+ProFlex_Translation filter=lfs diff=lfs merge=lfs -text
+CONTRIBUTE.md filter=lfs diff=lfs merge=lfs -text
+Databases filter=lfs diff=lfs merge=lfs -text
+Datasets filter=lfs diff=lfs merge=lfs -text
+ProFlex_Toolkit filter=lfs diff=lfs merge=lfs -text
+ProFlex-Translation filter=lfs diff=lfs merge=lfs -text
+README.md filter=lfs diff=lfs merge=lfs -text
+Scripts filter=lfs diff=lfs merge=lfs -text
