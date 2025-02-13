@@ -35,8 +35,8 @@ If problems occur during installation or specifically with structural comparison
 ### Upon installation, the toolkit can be imported and integrated into various workflows. To query a PDB against a proflex database requires only three lines of code:
 
 ```python
-import proflex as pf
-pq = pf.ProFlexQuery("/path/to/database")
+from proflex import ProFlexQuery as pf
+pq = pf("/path/to/database")
 pq.query_pdb("input.pdb")
 ```
 
@@ -56,8 +56,8 @@ Simply unpack all structures into the PDB subdirectory of the database. The PDB 
 
 ### Given a multifasta of proflex sequences, databases can be created like so:
 ```python
-import proflex as pf
-new_database = pf.NGramDatabase()
+from proflex import NGramDatabase
+new_database = NGramDatabase()
 new_database.parse_multifasta("/path/to/multifasta.fasta")
 new_database.save_to_directory("/path/to/output/directory")
 ```
@@ -80,14 +80,14 @@ git lfs pull
 Other methods exist for backtranslation etc and are fully available in the installed package. We provide the empirically defined percentiles from our study in the source code which can be easily accessed as follows:
 
 ```python
-import proflex as pf
-print(pf.ProFlex.PERCENTILES)
+from proflex import ProFlex as pf
+print(pf.PERCENTILES)
 ```
 
 Given a set of RMSF values you can derived ProFlex sequences as follows:
 
 ```python
-import proflex as pf
+from proflex import ProFlex as pf
 pf.encode_sequences(rmsf_vales)
 ```
 
