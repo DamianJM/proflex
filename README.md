@@ -88,7 +88,9 @@ Given a set of RMSF values you can derived ProFlex sequences as follows:
 
 ```python
 from proflex import ProFlex as pf
-pf.encode_sequences(rmsf_vales)
+proflex = pf()
+rmsf = [21, 1.2, 10, 1, 7] # input RMSF values
+print(proflex.encode_sequence(rmsf_values=rmsf)) # Output ProFlex
 ```
 
 ## A ProFlex online application for direct PDB submission is under development and will be made available soon!
