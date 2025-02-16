@@ -58,7 +58,7 @@ Simply unpack all structures into the PDB subdirectory of the database. The PDB 
 ```python
 from proflex import NGramDatabase
 new_database = NGramDatabase()
-new_database.parse_multifasta("/path/to/multifasta.fasta")
+new_database.parse_multifasta("/path/to/multifasta.fasta") # Either download pre-made database or provide proflex values constructed using encode_sequences
 new_database.save_to_directory("/path/to/output/directory")
 ```
 The newly created database can now be queried. In the case of custom databases be sure to provide the mutlifasta sequence file and PDB files in the same directory to allow for full functionality.
