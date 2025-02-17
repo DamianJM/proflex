@@ -84,13 +84,20 @@ from proflex import ProFlex as pf
 print(pf.PERCENTILES)
 ```
 
-Given a set of RMSF values you can derived ProFlex sequences as follows:
+Given a set of RMSF values you can derive ProFlex sequences as follows:
 
 ```python
 from proflex import ProFlex as pf
 proflex = pf()
 rmsf = [21, 1.2, 10, 1, 7] # input RMSF values
 print(proflex.encode_sequence(rmsf_values=rmsf)) # Output ProFlex
+```
+Given a set of ProFlex values you can backtranslate to scaled RMSF values as follows:
+
+```python
+from proflex import ProFlex as pf
+pq = pf()
+print(pq.decode_sequence("affghQAa"))
 ```
 
 ## A ProFlex online application for direct PDB submission is under development and will be made available soon!
